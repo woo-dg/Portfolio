@@ -513,6 +513,11 @@ class ResumeConsole {
         if (command === 'open resume' || command === 'open resume.pdf' || command === 'resume' || command === 'view resume') {
             this.addOutputLine('Opening resume...', 'success');
             setTimeout(() => {
+                // Force reload by updating iframe src with timestamp
+                const iframe = this.pdfContainer.querySelector('iframe');
+                if (iframe) {
+                    iframe.src = iframe.src.split('?')[0] + '?v=' + Date.now();
+                }
                 this.pdfContainer.style.display = 'block';
                 this.pdfContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }, 300);
