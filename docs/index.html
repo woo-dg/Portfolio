@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J Rosser - Portfolio</title>
-    <meta name="description" content="DPhil student at Oxford studying Machine Learning and AI Safety">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <title>Dave - Portfolio</title>
+    <meta name="description" content="Portfolio website">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="alternate icon" type="image/png" href="assets/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         (function() {
             try {
                 var saved = localStorage.getItem('theme');
-                var theme = saved === 'dark' || saved === 'light' ? saved : 'light';
+                var theme = saved === 'dark' || saved === 'light' ? saved : 'dark';
                 document.documentElement.setAttribute('data-theme', theme);
             } catch (e) {
-                document.documentElement.setAttribute('data-theme', 'light');
+                document.documentElement.setAttribute('data-theme', 'dark');
             }
         })();
     </script>
@@ -26,22 +27,13 @@
         <div class="header-grid">
             <!-- Logo -->
             <a href="#" class="group header-logo flex items-center">
-                    <svg aria-hidden="true" class="me-3 h-10 w-6 sm:me-3 sm:h-20 sm:w-12" fill="none" focusable="false" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
-                        <title>Logo</title>
-                        <g shape-rendering="crispEdges"><g><use xlink:href="#SvgjsSymbol1009" x="50" y="600" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="600" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="600" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="150" y="550" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="150" y="550" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="150" y="550" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="450" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="450" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="450" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="350" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="350" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="350" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="400" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="400" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="400" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="300" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="300" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="300" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="200" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="200" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="200" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="250" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="250" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="250" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="150" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="150" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="150" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="450" y="100" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="450" y="100" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="450" y="100" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="50" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="50" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="50" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="150" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="150" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="150" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="400" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="400" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="400" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="300" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="300" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="300" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="200" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="200" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="200" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="150" y="550" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="150" y="550" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="150" y="550" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="600" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="600" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="600" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="150" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="150" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="150" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="450" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="450" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="450" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="350" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="350" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="350" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="250" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="250" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="250" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="150" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="150" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="150" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="450" y="100" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="450" y="100" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="450" y="100" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="550" y="50" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="550" y="50" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="550" y="50" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="450" y="100" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="450" y="100" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="450" y="100" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="350" y="150" fill="#af67ff"></use><use xlink:href="#SvgjsSymbol1010" x="350" y="150" fill="#e497ff"></use><use xlink:href="#SvgjsSymbol1011" x="350" y="150" fill="#7b38cb"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="500" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="400" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="400" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="400" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="300" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="300" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="300" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="250" y="200" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="250" y="200" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="250" y="200" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="150" y="550" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="150" y="550" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="150" y="550" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="600" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="600" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="600" fill="#0cbe3b"></use></g><g><use xlink:href="#SvgjsSymbol1009" x="50" y="500" fill="#5ff26b"></use><use xlink:href="#SvgjsSymbol1010" x="50" y="500" fill="#98ff9c"></use><use xlink:href="#SvgjsSymbol1011" x="50" y="500" fill="#0cbe3b"></use></g></g><symbol id="SvgjsSymbol1000"><polygon points="0,12.5 25,0 50,12.5 25,25"></polygon></symbol><symbol id="SvgjsSymbol1001"><polygon points="0,12.5 25,25 25,50 0,37.5"></polygon></symbol><symbol id="SvgjsSymbol1002"><polygon points="25,25 50,12.5 50,37.5 25,50"></polygon></symbol><g></g><symbol id="SvgjsSymbol1003"><polygon points="0,37.5 75,0 150,37.5 75,75"></polygon></symbol><symbol id="SvgjsSymbol1004"><polygon points="0,37.5 75,75 75,150 0,112.5"></polygon></symbol><symbol id="SvgjsSymbol1005"><polygon points="75,75 150,37.5 150,112.5 75,150"></polygon></symbol><symbol id="SvgjsSymbol1006"><polygon points="0,43.75 87.5,0 175,43.75 87.5,87.5"></polygon></symbol><symbol id="SvgjsSymbol1007"><polygon points="0,43.75 87.5,87.5 87.5,175 0,131.25"></polygon></symbol><symbol id="SvgjsSymbol1008"><polygon points="87.5,87.5 175,43.75 175,131.25 87.5,175"></polygon></symbol><symbol id="SvgjsSymbol1009"><polygon points="0,50 100,0 200,50 100,100"></polygon></symbol><symbol id="SvgjsSymbol1010"><polygon points="0,50 100,100 100,200 0,150"></polygon></symbol><symbol id="SvgjsSymbol1011"><polygon points="100,100 200,50 200,150 100,200"></polygon></symbol>
-                    </svg>
+                <span class="logo-dg">DG</span>
             </a>
-
-            <!-- Title -->
-            <div class="header-title">
-                <span class="text-xl font-bold sm:text-2xl">J Rosser</span>
-            </div>
 
             <!-- Desktop Navigation -->
             <nav class="mobile-nav-menu header-nav sm:flex sm:flex-row sm:items-center" id="navigation-menu">
                 <a href="#about">About</a>
-                <!-- <a href="#news">News</a> -->
-                <a href="#publications">Publications</a>
+                <a href="#projects">Projects</a>
                 <a href="#resume">Résumé</a>
             </nav>
 
@@ -79,24 +71,36 @@
             </div>
         </section>
 
-        <!-- News Section -->
-        <!-- <section id="news" class="mb-16">
-            <div class="prose" id="news-content">
-                <div class="loading-spinner">Loading news content...</div>
-            </div>
-        </section> -->
-
-        <!-- Publications Section -->
-        <section id="publications" class="mb-16">
-            <div class="prose" id="publications-content">
-                <div class="loading-spinner">Loading publications content...</div>
+        <!-- Projects Section -->
+        <section id="projects" class="mb-16">
+            <div class="prose" id="projects-content">
+                <div class="loading-spinner">Loading projects content...</div>
             </div>
         </section>
 
         <!-- Resume Section -->
         <section id="resume" class="mb-16">
-            <div class="prose" id="resume-content">
-                <div class="loading-spinner">Loading resume content...</div>
+            <h2 class="title">Résumé</h2>
+            <div class="console-container">
+                <div class="console-header">
+                    <span class="console-dot"></span>
+                    <span class="console-dot"></span>
+                    <span class="console-dot"></span>
+                    <span class="console-title">Terminal</span>
+                </div>
+                <div class="console-body" id="console-output">
+                    <div class="console-line">
+                        <span class="console-prompt">$</span>
+                        <span class="console-text">Type 'open resume' to view my resume</span>
+                    </div>
+                </div>
+                <div class="console-input-line">
+                    <span class="console-prompt">$</span>
+                    <input type="text" class="console-input" id="console-input" autocomplete="off" spellcheck="false" placeholder="open resume">
+                </div>
+            </div>
+            <div id="resume-pdf-container" class="resume-pdf-container" style="display: none;">
+                <iframe src="assets/resume.pdf" class="resume-pdf" frameborder="0"></iframe>
             </div>
         </section>
     </main>

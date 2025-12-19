@@ -1,7 +1,7 @@
 // Theme management
 class ThemeManager {
     constructor() {
-        this.theme = localStorage.getItem('theme') || 'light';
+        this.theme = localStorage.getItem('theme') || 'dark';
         this.init();
     }
 
@@ -260,7 +260,7 @@ class LazyImageLoader {
 // Markdown content loader
 class MarkdownLoader {
     constructor() {
-        this.sections = ['about', 'news', 'publications', 'resume'];
+        this.sections = ['about', 'projects'];
         this.init();
     }
 
@@ -476,6 +476,75 @@ class MarkdownLoader {
     });
 })();
 
+// Interactive console for resume
+class ResumeConsole {
+    constructor() {
+        this.input = document.getElementById('console-input');
+        this.output = document.getElementById('console-output');
+        this.pdfContainer = document.getElementById('resume-pdf-container');
+        this.init();
+    }
+
+    init() {
+        if (!this.input || !this.output) return;
+
+        this.input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                this.handleCommand(this.input.value.trim());
+                this.input.value = '';
+            }
+        });
+
+        // Focus input when clicking on console
+        const consoleContainer = document.querySelector('.console-container');
+        if (consoleContainer) {
+            consoleContainer.addEventListener('click', () => {
+                this.input.focus();
+            });
+        }
+    }
+
+    handleCommand(command) {
+        if (!command) return;
+
+        // Add the command to output
+        this.addOutputLine(`$ ${command}`, 'command');
+
+        if (command === 'open resume' || command === 'open resume.pdf' || command === 'resume' || command === 'view resume') {
+            this.addOutputLine('Opening resume...', 'success');
+            setTimeout(() => {
+                this.pdfContainer.style.display = 'block';
+                this.pdfContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 300);
+        } else if (command === 'help' || command === '?') {
+            this.addOutputLine('Available commands:', 'info');
+            this.addOutputLine('  open resume    - View resume', 'info');
+            this.addOutputLine('  help           - Show this help message', 'info');
+            this.addOutputLine('  clear          - Clear console', 'info');
+        } else if (command === 'clear') {
+            // Keep only the initial prompt
+            this.output.innerHTML = '<div class="console-line"><span class="console-prompt">$</span><span class="console-text">Type \'open resume\' to view my resume</span></div>';
+        } else {
+            this.addOutputLine(`Command not found: ${command}. Type 'help' for available commands.`, 'error');
+        }
+    }
+
+    addOutputLine(text, type = 'text') {
+        const line = document.createElement('div');
+        line.className = 'console-line';
+        
+        if (type === 'command') {
+            line.innerHTML = `<span class="console-prompt">$</span><span class="console-text">${text.substring(2)}</span>`;
+        } else {
+            const className = type === 'error' ? 'console-error' : type === 'success' ? 'console-success' : type === 'info' ? 'console-info' : 'console-text';
+            line.innerHTML = `<span class="${className}">${text}</span>`;
+        }
+        
+        this.output.appendChild(line);
+        line.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+}
+
 // Initialize all functionality when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all components
@@ -488,6 +557,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     new LazyImageLoader();
     new MarkdownLoader();
+    
+    // Initialize resume console
+    new ResumeConsole();
     
     // Apply hover effect to all 'b' letters on initial content
     if (typeof window.applyBHoverEffect === 'function') {

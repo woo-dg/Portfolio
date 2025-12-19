@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Checkered background -->
+  <defs>
+    <pattern id="checkerboard" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="5" height="5" fill="#000"/>
+      <rect x="5" y="5" width="5" height="5" fill="#000"/>
+    </pattern>
+  </defs>
+  
+  <!-- Black border -->
+  <rect x="0" y="0" width="100" height="100" fill="#000"/>
+  
+  <!-- Inner area with checkered pattern -->
+  <rect x="5" y="5" width="90" height="90" fill="url(#checkerboard)" opacity="0.1"/>
+  <rect x="5" y="5" width="90" height="90" fill="#fff"/>
+  
+  <!-- Isometric 3D "DGS" text effect -->
+  <g transform="translate(50, 50)">
+    <!-- D - Left block (green) -->
+    <g transform="translate(-30, -10)">
+      <!-- Top face -->
+      <path d="M 0,0 L 12,-7 L 12,8 L 0,15 Z" fill="#5ff26b" opacity="0.9"/>
+      <!-- Front face -->
+      <path d="M 0,15 L 12,8 L 12,23 L 0,30 Z" fill="#4dd85a"/>
+      <!-- Side face -->
+      <path d="M 12,-7 L 20,-4 L 20,11 L 12,8 Z" fill="#6fff7d"/>
+    </g>
+    
+    <!-- G - Middle block (purple) -->
+    <g transform="translate(-5, -10)">
+      <!-- Top face -->
+      <path d="M 0,0 L 12,-7 L 12,8 L 0,15 Z" fill="#af67ff" opacity="0.9"/>
+      <!-- Front face -->
+      <path d="M 0,15 L 12,8 L 12,23 L 0,30 Z" fill="#9a4dd8"/>
+      <!-- Side face -->
+      <path d="M 12,-7 L 20,-4 L 20,11 L 12,8 Z" fill="#c485ff"/>
+    </g>
+    
+    <!-- S - Right block (green) -->
+    <g transform="translate(20, -10)">
+      <!-- Top face -->
+      <path d="M 0,0 L 12,-7 L 12,8 L 0,15 Z" fill="#5ff26b" opacity="0.9"/>
+      <!-- Front face -->
+      <path d="M 0,15 L 12,8 L 12,23 L 0,30 Z" fill="#4dd85a"/>
+      <!-- Side face -->
+      <path d="M 12,-7 L 20,-4 L 20,11 L 12,8 Z" fill="#6fff7d"/>
+    </g>
+  </g>
+</svg>
+
