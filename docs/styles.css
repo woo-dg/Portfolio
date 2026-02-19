@@ -481,11 +481,11 @@ body {
 }
 
 :root .sun-icon {
-    display: block;
+    display: none;
 }
 
 :root .moon-icon {
-    display: none;
+    display: block;
 }
 
 /* Prose styles (typography) */

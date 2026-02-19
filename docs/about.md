@@ -28,5 +28,3 @@ Previously, I was a Software Engineer Intern at Hypernym AI (a Meta Llama startu
 Outside of software, I build robots. My favorite robot is Hully, a biofouling robot that won 2nd in the world at the World Robot Olympiad and earned a $1,000 Ontario government grant to keep improving the prototype.
 
 I also enjoy 3D printing random stuff with my brother just to mess around and build stupid stuff.
-
-P.S. There are hidden Christmas ornaments on this website. Find one and drop the 🎄 emoji in your email subject line!
